@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/day1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="val">
+
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    yourName('hee', finFunc);
+
+
+    /// on()을 사용하면 렌더링 후에 생성된 요소에 대해서도 이벤트 바인딩이 된다.
+    /// click()은 DOM에 존재하는 요소에만 이벤트 바인딩이 된다.
+    $('.val').click(() => {
+        console.log("click2//////")
+    })
+
+    $('.val').on("click", () => {
+        console.log("click//////")
+    })
+</script>
